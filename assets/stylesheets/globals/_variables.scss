@@ -1,0 +1,83 @@
+// VARIABLES
+// -----------------------------
+
+// Global values for color schemes and basic styles
+// for Moovweb project
+
+// Color Scheme
+// ------------
+// Greens
+$green1:                  #00c109;
+$green2:                  #78c158;
+$green3:                  #057400;
+$green4:                  #057a01;
+
+// Blues
+$blue1:                   #3500ED;
+$blue2:                   #17338F;
+$blue3:                   #3ca3e0;
+
+// White
+$white:                   #FFFFFF;
+
+// Black
+$black:                   #000000;
+
+// Grays
+$gray1:                   #EEEEEE;
+$gray2:                   #3f3f3f;
+$gray3:                   #c8c8c8;
+$gray4:                   #aaa;
+$gray5:                   #2C2C2C;
+$gray6:                   #CCC;
+$gray7:                   #666;
+
+// Oranges
+$orange1:                 #f36721;
+
+// Typography
+// ----------
+$font_family:             "Helvetica Neue", Helvetica, Verdana;
+$base_font_size:          13px;
+$line_height:             24px;
+$text_color:              $gray5;
+$body_background_color:   $white;
+$link_color:              $blue1;
+
+// Header Sizes
+// ------------
+$h1_size:                 $base_font_size + 9px;
+$h2_size:                 $base_font_size + 6px;
+$h3_size:                 $base_font_size + 3px;
+
+// Borders
+// -------
+$border_green2:           1px solid $green2;
+$border_green2_shaded:    1px solid shade($green2, 20%);
+$border_gray3:            1px solid $gray3;
+
+// Gradients
+// ---------
+$grad_green1:             linear-gradient($green1 0, $green4 100%);
+$grad_green2:             linear-gradient(lighten($green2, 40%) 0, $green2 100%);
+$grad_gray2:              linear-gradient(lighten($gray2, 40%) 0, $gray2 100%);
+
+// Component Sizing
+// ----------------
+$padding:                 10px;
+$margin:                  10px;
+$border_radius:           5px;
+$btn_width:               100px;
+$spacing:                 10px;
+
+// Text Shadows
+// ------------
+$text_shadow_green2:      2px 1px 1px $green2;
+$text_shadow_gray3:       2px 1px 2px $gray3;
+$text_shadow_black1:      2px 1px 2px $black;
+$text_shadow_white:       0 1px $white;
+
+// Box Shadows
+// -----------
+$box_shadow:              0 1px 3px rgba(0,0,0,0.9), 0 -1px 2px rgba(250,250,250,0.8);
+$box_shadow_inset:        inset 0 1px 0 rgba(255,255,255,0.75), inset 0 -1px 1px rgba(255,255,255,.3);

@@ -1,0 +1,49 @@
+// Forms
+// -----------------------------
+
+/*
+  - form: basic form styling
+*/
+
+._form {
+  padding: $spacing;
+  label, ._label {
+    font-weight: bold;
+    font-size: 12px;
+    color: $gray6;
+    text-shadow: $box_shadow_inset;
+  }
+  ._row {
+    padding:0px 10px 5px 10px;
+    overflow: hidden;
+  }
+}
+
+input[type="text"], input[type="tel"], input[type="email"], ._input {
+  display: block;
+  padding: 7px;
+  border: none;
+  color: $gray7;
+  font-size: 13px;
+  text-shadow: $box_shadow_inset;
+  font-weight: bold;
+  @include appearance(none);
+  @include box-shadow($box_shadow_inset);
+  @include border-radius($border_radius);
+  @include background(linear-gradient(top, #eee 0%, #fff 100%));
+  @include transition(all, 1s, ease-in);
+  &:focus {
+    color: $black;
+    outline: none;
+    @include transition(all, 1s, ease-in);
+    @include background(linear-gradient(top, #fff 0%, #eee 100%));
+    @include box-shadow($box_shadow_inset, 0 0 3px 2px #fff);
+  }
+  &::-webkit-input-placeholder {
+     color: #999;
+  }
+
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+    display: none;
+  }
+}

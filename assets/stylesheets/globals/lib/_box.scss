@@ -1,0 +1,33 @@
+// Flex Box
+// -----------------------------
+
+/*
+  - flex_box: add this class to get flex box properties
+  - flex_box_item: add to the number of items that are in the container
+*/
+
+._flex_box {
+  @include display-box;
+  @include box-orient(horizontal);
+  @include box-align(stretch);
+  ._flex_box_item_1 {
+    display: block;
+    @include box-flex(1);
+  }
+  ._flex_box_item_2 {
+    display: block;
+    @include box-flex(2);
+  }
+  ._flex_box_item_3 {
+    display: block;
+    @include box-flex(3);
+  }
+  ._flex_box_item_4 {
+    display: block;
+    @include box-flex(4);
+  }
+  ._flex_box_item_5 {
+    display: block;
+    @include box-flex(5);
+  }
+}

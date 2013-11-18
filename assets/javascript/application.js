@@ -1,0 +1,2 @@
+/* Default JS to be run when you uncomment application.js from the bundles.yml
+   file */

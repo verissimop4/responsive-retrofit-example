@@ -1,0 +1,39 @@
+// Every page should have a class on the body
+// Scope that in each file at the start
+body._home {
+  #container {
+    padding: $spacing; 
+    .row {
+      .small-6 {
+        @include mobile() {
+          width: 100%;
+        }
+        padding: 10px;
+        .image {        
+          @include small-tablet-desktop() {
+            border-radius: $border_radius;
+            border: $border_gray3;
+            box-shadow: 0 0 3px 0 $gray6;
+            text-align: center;
+            img {        
+              padding: 10px;
+              @include large-tablet-desktop() {
+                height: 150px;
+              }
+              @include small-tablet() {
+                height: 200px;
+              }
+            }
+          }
+        }
+      }
+      [id*='img'] {
+        text-align: center;
+        img {              
+          height: auto;
+          width: auto;
+        }
+      }
+    }
+  }
+}

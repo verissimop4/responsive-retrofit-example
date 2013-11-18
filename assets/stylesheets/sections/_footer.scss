@@ -1,0 +1,11 @@
+#footer {
+  overflow: hidden;
+  padding: $padding;
+  text-align: center;
+  font-size: 11px;
+  color: $gray3;
+  background-color: $gray2;
+  ._copyright {
+    padding: 5px;
+  }
+}

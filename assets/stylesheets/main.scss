@@ -1,0 +1,45 @@
+// Main
+// Imports all necessary style files
+// WARNING: order is important
+// -----------------------------
+
+// Reset file for standardizing the page
+@import "globals/_reset";
+
+// Bourbon, a Sass mixin library
+// learn more => http://bourbon.io/
+@import "globals/bourbon/_bourbon";
+
+// Foundation
+@import "globals/_normalize";
+@import "globals/_foundation";
+
+// File for global Uranium stylings
+// Uranium is a mobile javascript widget library
+// learn more => http://uraniumjs.com/
+@import "globals/_uranium";
+
+// Import responsive styles
+@import "globals/_responsive";
+
+// Spracker will auto-generate this file for you. MAGIC!
+@import "globals/_sprites";
+
+// Site wide variables
+// Configure your styleguide here.
+@import "globals/_variables";
+
+// Import Library of mixins and classes
+@import "globals/_lib.scss";
+
+// Base file contains all the global styles
+@import "globals/_base";
+
+
+
+// Header & Footer
+@import "sections/_header";
+@import "sections/_footer";
+
+// Pages
+@import "pages/_home";

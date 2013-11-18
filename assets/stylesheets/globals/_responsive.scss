@@ -1,0 +1,119 @@
+// Media Queries
+@mixin mobile() {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (min-width: 481px) and (max-width: 980px) {
+    @content;
+  }
+}
+
+@mixin small-tablet() {
+  @media (min-width: 481px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin large-tablet() {
+  @media (min-width: 768px) and (max-width: 980px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: 981px) {
+    @content;
+  }
+}
+
+@mixin mobile-small-tablet() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile-large-tablet() {
+  @media (max-width: 980px) {
+    @content;
+  }
+}
+
+@mixin small-tablet-desktop() {
+  @media (min-width: 481px) {
+    @content;
+  }
+}
+
+@mixin large-tablet-desktop() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+.mobile {
+  display: none;
+  @include mobile() {
+    display: block;
+  }
+}
+
+
+// Visibility Classes
+.tablet {
+  display: none !important;
+  @include tablet() {
+    display: inherit !important;
+  }
+}
+
+.small-tablet {
+  display: none !important;
+  @include small-tablet() {
+    display: inherit !important;
+  }
+}
+
+.large-tablet {
+  display: none !important;
+  @include large-tablet() {
+    display: inherit !important;
+  }
+}
+
+.desktop {
+  display: none !important;
+  @include desktop() {
+    display: inherit !important;
+  }
+}
+
+.mobile-small-tablet {
+  display: none !important;
+  @include mobile-small-tablet() {
+    display: inherit !important;
+  }
+}
+
+.mobile-large-tablet {
+  display: none !important;
+  @include mobile-large-tablet() {
+    display: inherit !important;
+  }
+}
+
+.small-tablet-desktop {
+  display: none !important;
+  @include small-tablet-desktop() {
+    display: inherit !important;
+  }
+}
+
+.large-tablet-desktop {
+  display: none !important;
+  @include large-tablet-desktop() {
+    display: inherit !important;
+  }
+}
