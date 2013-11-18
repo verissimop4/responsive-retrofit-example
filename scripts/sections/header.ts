@@ -39,5 +39,17 @@ $('./body') {
         }
       }
     }      
-  }  
+  }    
 }
+
+
+# Clean up the document by removing what's left of the table we pulled the links out of
+# to create our foundation header. This is equivalent to the following lines from the XSLT
+# example:
+#  <!--
+#  Remove the old header. 
+#  Removes the table with the y18.gif <img> that has no <table> descendants.
+#  -->
+# <xsl:template match="table[descendant::img[contains(@src,'y18.gif')] and not(descendant::table) ]" />
+#
+remove("//img[contains(@src,'y18.gif')]//ancestor::table[1]")
