@@ -1,6 +1,13 @@
-## Basics
+## Responsive Retrofit Example
 
-Welcome to your Moovweb project! Moovweb is a great way to build a compelling front-end for a website. The files in this project describe the changes we want to make to the front end of a site. There's places in this project to add new images (assets/images/), styles (assets/stylesheets/) and even manipulate HTML (scripts/).
+This repo demonstates a responsive retrofit of [Hacker News](http://news.ycombinator.com) by adding a responsive header using the Foundation top-bar. In a full retrofit there would be additional design changes beyond these but this should serve to illustrate the process. The Hacker News website was chosen because:
+
+- To demonstrate the technique on a real site.
+- The HTML of Hacker News is not too small to make things too easy, but not too big to make our the code complicated.
+
+## Demo
+
+A live demo of the retrofit is [here](https://mishan-test211301.news.ycombinator.com.moovapp.com/).
 
 ## Before Running This
 
@@ -16,7 +23,12 @@ Typically, on Mac or Linux, just browse to this project folder in a terminal and
 
     sudo moov server 
 
+
 Then, just browse to [mlocal.news.ycombinator.com](http://mlocal.news.ycombinator.com) and you are ready to start developing!
+
+## Chrome SSL Warnings
+
+If you are running this locally you will get an SSL warning from Chrome that "The site's security certificate is not trusted!". Unlike normal SSL warnings in Chrome this one will not have a "Proceed" button that you can click. To get past this warning message, simply type the "proceed" into your browser window (there will be no on screen feedback while you type) and hit return.
 
 ## Deployment
 
